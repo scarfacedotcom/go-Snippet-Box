@@ -23,6 +23,7 @@ func snippetView(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "Display a sepcific snippet with ID %d...", id)
 }
+
 func snippetCreate(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 		w.Header().Set("Allow", http.MethodPost)
